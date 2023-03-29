@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: sayeda21/nodeapp:latest
+        image: sayeda21/myapp:latest
         ports:
         - containerPort: 3000

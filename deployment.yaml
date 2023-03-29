@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deployment
+  name: nodeapp-deployment
   labels:
-    app: myapp
+    app: nodeapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: nodeapp
   template:
     metadata:
       labels:
-        app: myapp 
+        app: nodeapp 
     spec:
       containers:
       - name: nodeserver
-        image: sayeda21/myapp:latest
+        image: sayeda21/nodeapp:latest
         ports:
         - containerPort: 3000
